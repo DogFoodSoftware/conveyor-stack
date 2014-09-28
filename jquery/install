@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mkdir runnable
+cd runnable
+curl -L -s -O http://code.jquery.com/jquery-1.11.1.js
