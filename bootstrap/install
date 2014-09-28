@@ -1,0 +1,9 @@
+#!/bin/bash
+
+mkdir runnable
+cd runnable
+curl -L -s -O https://github.com/twbs/bootstrap/releases/download/v3.2.0/bootstrap-3.2.0-dist.zip
+unzip bootstrap-3.2.0-dist.zip
+mv bootstrap-3.2.0-dist/* .
+rmdir bootstrap-3.2.0-dist
+rm bootstrap-3.2.0-dist.zip
