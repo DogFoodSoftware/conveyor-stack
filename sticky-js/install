@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SHA=a98ce74de5dbf94d335b79c9d05d2430193d0dd5
+
+mkdir runnable
+cd runnable
+curl -L -s -O https://github.com/garand/sticky/archive/${SHA}.zip
+unzip -q ${SHA}.zip
+mv sticky-${SHA}/* sticky-${SHA}/.gitignore .
+rmdir sticky-${SHA}
+rm ${SHA}.zip
