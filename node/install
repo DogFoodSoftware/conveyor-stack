@@ -1,0 +1,13 @@
+#!/bin/bash
+
+VERSION=v0.10.32
+PACKAGE=node-${VERSION}-linux-x64
+PACKAGE_FILE=${PACKAGE}.tar.gz
+
+mkdir runnable
+cd runnable
+curl -L -s -O http://nodejs.org/dist/$VERSION/$PACKAGE_FILE
+tar xzf $PACKAGE_FILE
+mv $PACKAGE/* .
+rmdir $PACKAGE
+rm $PACKAGE_FILE
